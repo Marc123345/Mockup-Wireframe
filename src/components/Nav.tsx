@@ -53,21 +53,13 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <Link
-            to="/proposal"
-            className="hidden md:inline-flex items-center gap-2 text-[11px] tracking-[0.3em] uppercase text-[#c8a86a] hover:text-[#ebe4d4] transition font-light"
-          >
-            View Proposal
-            <span className="text-xs">↗</span>
-          </Link>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-3 border border-[#c8a86a]/60 hover:border-[#c8a86a] px-5 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase text-[#ebe4d4] hover:bg-[#c8a86a]/10 transition"
-          >
-            Get in Touch
-          </a>
-        </div>
+        <Link
+          to="/proposal"
+          className="inline-flex items-center gap-3 border border-[#c8a86a]/60 hover:border-[#c8a86a] px-5 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase text-[#ebe4d4] hover:bg-[#c8a86a]/10 transition"
+        >
+          View Proposal
+          <span className="text-xs">↗</span>
+        </Link>
       </div>
     </motion.header>
   );
