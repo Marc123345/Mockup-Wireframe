@@ -123,19 +123,19 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#0b0b0a]/80 via-transparent to-[#0b0b0a]/40 pointer-events-none" />
 
       {/* Top framing marks */}
-      <div className="absolute top-28 left-6 md:left-10 text-[10px] tracking-[0.3em] text-[#c8a86a]/80 flex items-center gap-3 z-20">
+      <div className="absolute top-24 md:top-28 left-6 md:left-10 text-[9px] md:text-[10px] tracking-[0.3em] text-[#c8a86a]/80 flex items-center gap-3 z-[5]">
         <span>
           {String(index + 1).padStart(2, "0")} · {slide.meta.split(" · ")[1]}
         </span>
-        <span className="w-10 h-px bg-[#c8a86a]/40" />
-        <span>CAPE TOWN · 33.9°S</span>
+        <span className="hidden md:block w-10 h-px bg-[#c8a86a]/40" />
+        <span className="hidden md:inline">CAPE TOWN · 33.9°S</span>
       </div>
-      <div className="absolute top-28 right-6 md:right-10 text-[10px] tracking-[0.3em] text-[#c8a86a]/80 hidden md:block z-20">
+      <div className="absolute top-28 right-6 md:right-10 text-[10px] tracking-[0.3em] text-[#c8a86a]/80 hidden md:block z-[5]">
         {slide.meta}
       </div>
 
       {/* Slide copy */}
-      <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 w-full pb-24 md:pb-32 pt-44 md:pt-56 z-10 flex flex-col justify-end min-h-[100svh]">
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 w-full pb-20 md:pb-32 pt-36 md:pt-56 z-10 flex flex-col justify-end min-h-[100svh]">
         <AnimatePresence mode="wait">
           <motion.div key={`slide-${index}`} className="max-w-5xl">
             <motion.div
@@ -158,7 +158,7 @@ export default function Hero() {
               initial="hidden"
               animate="show"
               exit="exit"
-              className="font-[Cormorant_Garamond] font-light tracking-[-0.02em] leading-[0.92] text-[13vw] md:text-[8.5vw] lg:text-[8rem] text-[#ebe4d4]"
+              className="font-[Cormorant_Garamond] font-light tracking-[-0.02em] leading-[0.95] text-[10.5vw] md:text-[8.5vw] lg:text-[8rem] text-[#ebe4d4]"
             >
               {slide.headline.map((w, i) =>
                 w ? (

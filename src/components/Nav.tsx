@@ -17,10 +17,10 @@ export default function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 backdrop-blur-xl bg-[#0b0b0a]/85 border-b border-[#ebe4d4]/5 md:bg-transparent md:backdrop-blur-none md:border-transparent ${
         scrolled
-          ? "backdrop-blur-xl bg-[#0b0b0a]/80 border-b border-[#ebe4d4]/5"
-          : "bg-transparent"
+          ? "md:backdrop-blur-xl md:bg-[#0b0b0a]/80 md:border-[#ebe4d4]/5"
+          : ""
       }`}
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-10 h-20">
