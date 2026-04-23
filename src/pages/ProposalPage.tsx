@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import Wireframe from "../components/Wireframe";
+import { cards as siteCards } from "../data/cards";
 
 const fadeUp: Variants = {
   hidden: { y: 30, opacity: 0 },
@@ -195,8 +196,87 @@ export default function ProposalPage() {
         </div>
       </Section>
 
+      {/* Section: Mockup Preview */}
+      <Section number="04" eyebrow="The Mockup" title={<>Select a <span className="italic text-[#c8a86a]">chapter</span>.</>}>
+        <div className="flex items-end justify-between mb-10">
+          <p className="text-lg text-[#ebe4d4]/75 font-light leading-relaxed max-w-2xl">
+            Visual preview of the homepage index — six chapter cards in a
+            cinematic mosaic. Each card becomes a full-screen overlay on click.
+          </p>
+          <div className="hidden md:block text-[11px] tracking-[0.3em] text-[#ebe4d4]/40 uppercase font-light">
+            06 Sections
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 md:auto-rows-[240px]">
+          {siteCards.map((c) => {
+            const span =
+              c.size === "lg"
+                ? "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto"
+                : "aspect-[4/5]";
+            return (
+              <div
+                key={c.key}
+                className={`group relative overflow-hidden ${span}`}
+              >
+                <div className="absolute inset-0">
+                  <Wireframe
+                    fill
+                    label={`${c.title.toUpperCase()} · PLATE`}
+                    sublabel={c.tagline}
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a] via-[#0b0b0a]/40 to-[#0b0b0a]/10" />
+                <div className="absolute inset-0 border border-[#ebe4d4]/5 group-hover:border-[#c8a86a]/60 transition duration-500" />
+
+                <div className="absolute top-5 left-5 right-5 flex items-start justify-between">
+                  <div className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-xl">
+                    {c.number}
+                  </div>
+                  <div className="w-8 h-8 border border-[#ebe4d4]/30 grid place-items-center">
+                    <span className="text-[#ebe4d4] text-sm">↗</span>
+                  </div>
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-7">
+                  <div className="text-[10px] tracking-[0.3em] text-[#c8a86a] uppercase font-light mb-2">
+                    {c.label}
+                  </div>
+                  <div
+                    className={`font-[Cormorant_Garamond] font-light leading-[0.95] text-[#ebe4d4] ${
+                      c.size === "lg"
+                        ? "text-4xl md:text-6xl"
+                        : "text-3xl md:text-4xl"
+                    }`}
+                  >
+                    {c.title}
+                  </div>
+                  <div className="mt-3 font-[Cormorant_Garamond] italic text-[#ebe4d4]/60 text-sm">
+                    {c.tagline}
+                  </div>
+                  <div className="mt-4 flex items-center gap-3 text-[10px] tracking-[0.3em] text-[#ebe4d4]/40 font-light">
+                    ENTER
+                    <span className="w-10 h-px bg-current" />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-3 border border-[#c8a86a]/60 hover:border-[#c8a86a] px-8 py-4 text-[11px] font-light tracking-[0.3em] uppercase hover:bg-[#c8a86a]/10 transition text-[#ebe4d4]"
+          >
+            View the Live Mockup
+            <span>↗</span>
+          </Link>
+        </div>
+      </Section>
+
       {/* Section: Deliverables */}
-      <Section number="04" eyebrow="Scope of Work" title={<>What you <span className="italic text-[#c8a86a]">get</span>.</>}>
+      <Section number="05" eyebrow="Scope of Work" title={<>What you <span className="italic text-[#c8a86a]">get</span>.</>}>
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-0">
           {deliverables.map((d, i) => (
             <div key={d} className="flex gap-5 py-5 border-b border-[#ebe4d4]/10">
@@ -210,7 +290,7 @@ export default function ProposalPage() {
       </Section>
 
       {/* Section: Timeline */}
-      <Section number="05" eyebrow="Timeline" title={<>Four weeks to <span className="italic text-[#c8a86a]">launch</span>.</>}>
+      <Section number="06" eyebrow="Timeline" title={<>Four weeks to <span className="italic text-[#c8a86a]">launch</span>.</>}>
         <div className="grid md:grid-cols-4 gap-px bg-[#ebe4d4]/5">
           {timeline.map((t) => (
             <div key={t.w} className="bg-[#0b0b0a] p-8 min-h-[200px]">
@@ -223,7 +303,7 @@ export default function ProposalPage() {
       </Section>
 
       {/* Section: Investment */}
-      <Section number="06" eyebrow="Investment" title={<>Transparent <span className="italic text-[#c8a86a]">pricing</span>.</>}>
+      <Section number="07" eyebrow="Investment" title={<>Transparent <span className="italic text-[#c8a86a]">pricing</span>.</>}>
         <div className="grid md:grid-cols-[1.3fr_1fr] gap-16 items-start">
           <div>
             <div className="divide-y divide-[#ebe4d4]/10">
@@ -280,7 +360,7 @@ export default function ProposalPage() {
       </Section>
 
       {/* Section: Next Steps */}
-      <Section number="07" eyebrow="Next Steps" title={<>Let's <span className="italic text-[#c8a86a]">begin</span>.</>}>
+      <Section number="08" eyebrow="Next Steps" title={<>Let's <span className="italic text-[#c8a86a]">begin</span>.</>}>
         <div className="grid md:grid-cols-3 gap-4 mb-16">
           {[
             { n: "01", t: "Approve", d: "Sign this proposal — below or via email." },
