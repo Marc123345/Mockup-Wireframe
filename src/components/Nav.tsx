@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,7 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-10 h-20">
-        <a href="#" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 border border-[#c8a86a]/60 grid place-items-center">
             <span className="font-[Cormorant_Garamond] italic font-bold text-xl text-[#ebe4d4] leading-none">
               NV
@@ -37,7 +38,7 @@ export default function Nav() {
               Global · Cape Town
             </span>
           </div>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-9 text-[12px] tracking-[0.2em] uppercase text-[#ebe4d4]/70 font-light">
           {items.map((item) => (
@@ -52,13 +53,14 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-5">
-          <a
-            href="#"
-            className="hidden md:inline-flex text-[11px] tracking-[0.25em] uppercase text-[#ebe4d4]/60 hover:text-[#ebe4d4] transition"
+        <div className="flex items-center gap-4">
+          <Link
+            to="/proposal"
+            className="hidden md:inline-flex items-center gap-2 text-[11px] tracking-[0.3em] uppercase text-[#c8a86a] hover:text-[#ebe4d4] transition font-light"
           >
-            EN / FR
-          </a>
+            View Proposal
+            <span className="text-xs">↗</span>
+          </Link>
           <a
             href="#contact"
             className="inline-flex items-center gap-3 border border-[#c8a86a]/60 hover:border-[#c8a86a] px-5 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase text-[#ebe4d4] hover:bg-[#c8a86a]/10 transition"
