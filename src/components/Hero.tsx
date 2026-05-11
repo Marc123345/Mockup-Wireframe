@@ -124,17 +124,6 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/40 pointer-events-none" />
       </div>
 
-      {/* Top framing marks */}
-      <div className="absolute top-24 md:top-28 left-6 md:left-10 text-[9px] md:text-[10px] tracking-[0.3em] text-[#b89a6a]/80 flex items-center gap-3 z-[5]">
-        <span>
-          {String(index + 1).padStart(2, "0")} · {slide.meta.split(" · ")[1]}
-        </span>
-        <span className="hidden md:block w-10 h-px bg-[#b89a6a]/40" />
-        <span className="hidden md:inline">CAPE TOWN · 33.9°S</span>
-      </div>
-      <div className="absolute top-28 right-6 md:right-10 text-[10px] tracking-[0.3em] text-[#b89a6a]/80 hidden md:block z-[5]">
-        {slide.meta}
-      </div>
 
       {/* Slide copy */}
       <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 w-full pb-20 md:pb-32 pt-36 md:pt-56 z-10 flex flex-col justify-end min-h-[100svh]">
