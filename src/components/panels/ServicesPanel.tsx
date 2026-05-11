@@ -3,41 +3,52 @@ import Wireframe from "../Wireframe";
 const services = [
   {
     n: "01",
-    t: "Production",
-    d: "Full production services — scouting, crews, permits, fixers, on-set management.",
-    items: ["Line producers", "Local crew sourcing", "Permits & customs", "Fixer support", "Insurance & indemnity"],
+    t: "Line Producing",
+    d: "Experienced line producers embedded in your production. From prep through wrap — schedules, logistics, and daily operations.",
+    items: ["Production scheduling", "Budget tracking & cost reporting", "Department head oversight", "Wrap coordination"],
   },
   {
     n: "02",
-    t: "Locations",
-    d: "4,000 hectares of vineyard, forest, mountain, ocean — plus the Western Cape.",
-    items: ["On-estate locations", "Regional scouting (SA-wide)", "Negotiation & clearances", "Location lock packages"],
+    t: "Budgeting",
+    d: "Detailed South African budget preparation. Accurate local rates, currency management, and rebate modelling.",
+    items: ["Above & below-the-line budgets", "SA tax incentive modelling", "Currency hedging advice", "Revised actuals on request"],
   },
   {
     n: "03",
-    t: "Hospitality",
-    d: "On-site accommodations and catering. Cast, crew, client — one place.",
-    items: ["180 beds · on-estate", "Crew dining 3 meals/day", "VIP talent cottages", "Transport & logistics"],
+    t: "Payroll & Accounting",
+    d: "Full entertainment payroll and production accounting. Compliant, timely, and built for international co-productions.",
+    items: ["SA & international cast/crew payroll", "PAYE & UIF compliance", "Guild & union remittances", "Cost reports & audit packs"],
   },
   {
     n: "04",
-    t: "Equipment",
-    d: "Grip, lighting, camera via Hollywood Studio partnerships. Specialty on request.",
-    items: ["ARRI / RED / Sony bodies", "Full grip & lighting packages", "Cranes, dollies, car rigs", "Specialty: drone, underwater, mo-cap"],
+    t: "Fixer Services",
+    d: "On-the-ground support across South Africa. Permits, customs, logistics, and introductions — everything that makes a foreign shoot work.",
+    items: ["Filming permits (national & local)", "Equipment carnets & customs", "Location negotiation", "Government & community liaison"],
   },
 ];
 
 export default function ServicesPanel() {
   return (
     <div className="space-y-16">
-      <div className="grid md:grid-cols-[1.3fr_1fr] gap-10">
-        <p className="max-w-2xl text-lg md:text-xl text-[#f0ece4]/75 font-light leading-relaxed">
-          One partner. Every department. NV Films handles everything so your
-          production only handles the creative.
-        </p>
+      {/* Intro */}
+      <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+        <div>
+          <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-5">
+            02 · NV Film Services
+          </div>
+          <h3 className="font-[Cormorant_Garamond] text-4xl md:text-6xl font-light leading-[1.05] text-[#f0ece4]">
+            One partner. <span className="italic text-[#b89a6a]">Every department.</span>
+          </h3>
+          <p className="mt-8 text-lg text-[#f0ece4]/70 font-light leading-relaxed">
+            NV Film Services handles everything so your production only handles
+            the creative. Line producing, budgeting, payroll, and fixer support —
+            all under one roof.
+          </p>
+        </div>
         <Wireframe ratio="aspect-[5/3]" label="DEPARTMENT DIAGRAM" sublabel="Production ↔ Studio ↔ Post" />
       </div>
 
+      {/* Services grid */}
       <div className="grid md:grid-cols-2 gap-px bg-[#f0ece4]/5">
         {services.map((s) => (
           <div key={s.n} className="bg-[#0a0a0a] p-10 hover:bg-[#f0ece4]/[0.02] transition group flex flex-col gap-8">
@@ -59,6 +70,28 @@ export default function ServicesPanel() {
             </ul>
           </div>
         ))}
+      </div>
+
+      {/* SA Incentive callout */}
+      <div className="border border-[#b89a6a]/30 p-10 md:p-14">
+        <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-6">
+          South Africa Tax Incentive
+        </div>
+        <div className="grid md:grid-cols-[1fr_auto] gap-8 items-end">
+          <div>
+            <div className="font-[Cormorant_Garamond] text-5xl md:text-7xl font-light text-[#f0ece4]">
+              Up to <span className="italic text-[#b89a6a]">35%</span>
+            </div>
+            <p className="mt-4 text-sm text-[#f0ece4]/60 font-light leading-relaxed max-w-lg">
+              The DTIC rebate on qualifying South African spend. NV Film Services
+              manages your incentive application from assessment through to
+              rebate receipt — including QSPE certification and NFVF submissions.
+            </p>
+          </div>
+          <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] uppercase font-light whitespace-nowrap">
+            DTIC · NFVF · QSPE
+          </div>
+        </div>
       </div>
 
       {/* Workflow */}

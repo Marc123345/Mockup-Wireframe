@@ -4,52 +4,52 @@ import Wireframe from "./Wireframe";
 
 const slides = [
   {
-    eyebrow: "Global Production Services · Flagship Studio, South Africa",
-    headline: ["A groundbreaking", "studio ", "redefining", "film production."],
+    eyebrow: "NV Film Studios Africa · NV Film Services · Cape Town",
+    headline: ["Two entities.", "One production", "home.", ""],
     emphasis: 2,
     body:
-      "NV Films is your dedicated production service partner. Anchored on Lourensford Estate, 30 minutes from Cape Town International.",
+      "NV Film Studios Africa brings the infrastructure. NV Film Services brings the expertise. Together — your complete production destination in South Africa.",
     plate: "HERO 01 · ESTATE AERIAL",
     sub: "Golden hour · Lourensford Estate · Somerset West",
-    ctaA: "Watch the Reel",
-    ctaB: "Tour the Studio →",
+    ctaA: "Explore the Universe",
+    ctaB: "Start an Inquiry →",
     meta: "REEL 2026 · INTRO",
   },
   {
-    eyebrow: "The Studio · 88,000 sq ft",
-    headline: ["Five stages.", "Infinite", "set-ups.", ""],
-    emphasis: 1,
+    eyebrow: "NV Film Studios Africa · NVFSA · Flagship Studio",
+    headline: ["Five stages.", "4,000 hectares.", "Lourensford.", ""],
+    emphasis: 2,
     body:
-      "Five cutting-edge sound stages — from a 30,000 sq ft tank-ready build to a 270° LED virtual production volume.",
+      "Five cutting-edge sound stages — from a 30,000 sq ft tank-ready build to a 270° LED virtual production volume — on a private wine estate 30 minutes from Cape Town.",
     plate: "HERO 02 · STAGE ONE INTERIOR",
     sub: "Tank-ready · 60 ft grid height · silent HVAC",
-    ctaA: "Explore Facilities",
+    ctaA: "Tour the Studios",
     ctaB: "Book a Site Visit →",
     meta: "REEL 2026 · FACILITIES",
   },
   {
-    eyebrow: "Selected Work · 40+ Productions",
+    eyebrow: "NV Film Services · Production Services · End-to-End",
+    headline: ["Brief in.", "Finished", "film out.", ""],
+    emphasis: 1,
+    body:
+      "Line producing, budgeting, payroll, fixer services, and entertainment accounting. One partner. Every department. So your production only handles the creative.",
+    plate: "HERO 03 · DEPARTMENT WORKFLOW",
+    sub: "Brief → Scout → Crew → Shoot → Deliver",
+    ctaA: "Our Services",
+    ctaB: "Get a Quote →",
+    meta: "REEL 2026 · SERVICES",
+  },
+  {
+    eyebrow: "Selected Work · 40+ Productions · 2014 – 2026",
     headline: ["Raised", "By Wolves.", "Warrior.", "Black Sails."],
     emphasis: 0,
     body:
-      "Home to Ridley Scott's sci-fi epic, Justin Lin's period action, and Starz's era-defining pirate drama.",
-    plate: "HERO 03 · PRODUCTION STILLS",
-    sub: "Selected frames · 2014 – 2024",
+      "Home to Ridley Scott's sci-fi epic, Justin Lin's period action, and Starz's era-defining pirate drama. Over a decade of world-class productions, filmed in South Africa.",
+    plate: "HERO 04 · PRODUCTION STILLS",
+    sub: "Selected frames · 2014 – 2026",
     ctaA: "See the Catalogue",
     ctaB: "Press Quotes →",
     meta: "REEL 2026 · PRODUCTIONS",
-  },
-  {
-    eyebrow: "End-to-End · One Partner",
-    headline: ["Concept.", "Capture.", "Final cut.", "Under one roof."],
-    emphasis: 3,
-    body:
-      "Production, locations, hospitality, and post — in-house or partnered. You bring the script, we handle the rest.",
-    plate: "HERO 04 · WORKFLOW",
-    sub: "Brief → Scout → Crew → Shoot → Deliver",
-    ctaA: "Our Services",
-    ctaB: "Start an Inquiry →",
-    meta: "REEL 2026 · WORKFLOW",
   },
 ];
 

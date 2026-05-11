@@ -11,15 +11,22 @@ const stages = [
 export default function FacilitiesPanel() {
   return (
     <div className="space-y-16">
-      <div className="grid md:grid-cols-[1.3fr_1fr] gap-10 items-end">
-        <p className="max-w-2xl text-lg md:text-xl text-[#f0ece4]/75 font-light leading-relaxed">
-          Five cutting-edge sound stages on a 4,000-hectare private estate.
-          Purpose-built for episodic and feature work — from practical tank
-          shoots to full LED virtual production.
-        </p>
-        <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] font-light uppercase">
-          Facility map available on request
+      {/* Entity intro */}
+      <div className="grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+        <div>
+          <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-5">
+            01 · NV Film Studios Africa
+          </div>
+          <h3 className="font-[Cormorant_Garamond] text-4xl md:text-6xl font-light leading-[1.05] text-[#f0ece4]">
+            Africa's premier <span className="italic text-[#b89a6a]">studio destination.</span>
+          </h3>
+          <p className="mt-8 text-lg text-[#f0ece4]/70 font-light leading-relaxed">
+            Five cutting-edge sound stages on a 4,000-hectare private wine estate.
+            Purpose-built for episodic and feature work — from practical tank
+            shoots to full LED virtual production.
+          </p>
         </div>
+        <Wireframe ratio="aspect-[5/3]" label="NVFSA · STAGE ONE" sublabel="30,000 sq ft · tank-ready · 60 ft grid" />
       </div>
 
       {/* Stat row */}

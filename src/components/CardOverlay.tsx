@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { cards, type CardKey } from "../data/cards";
-import Wireframe from "./Wireframe";
 import ProductionsPanel from "./panels/ProductionsPanel";
 import FacilitiesPanel from "./panels/FacilitiesPanel";
 import ServicesPanel from "./panels/ServicesPanel";
@@ -52,10 +51,10 @@ export default function CardOverlay({ activeKey, onClose }: Props) {
               layoutId={`card-image-${card.key}`}
               className="absolute inset-0"
             >
-              <Wireframe
-                fill
-                label={`${card.title.toUpperCase()} · HERO PLATE`}
-                sublabel="4K video or key still"
+              <img
+                src={card.image}
+                alt={card.title}
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-[#0a0a0a]/30" />
