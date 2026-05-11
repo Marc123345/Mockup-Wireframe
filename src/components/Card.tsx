@@ -16,7 +16,7 @@ export default function Card({ card, onOpen, index }: Props) {
   const spanClass =
     card.size === "lg"
       ? "md:col-span-2 md:row-span-2 aspect-square md:aspect-auto"
-      : "aspect-[4/5]";
+      : "aspect-[4/5] md:aspect-auto";
 
   return (
     <motion.button
