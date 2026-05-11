@@ -101,26 +101,28 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[100svh] overflow-hidden"
+      className="relative min-h-[100svh]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Slide stack (image + gradient) */}
-      <AnimatePresence initial={false} mode="sync">
-        <motion.div
-          key={`bg-${index}`}
-          initial={{ opacity: 0, scale: 1.06 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 1.02 }}
-          transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
-          className="absolute inset-0"
-        >
-          <Wireframe fill label={slide.plate} sublabel={slide.sub} />
-        </motion.div>
-      </AnimatePresence>
+      {/* Background — overflow-hidden scoped here so it doesn't clip bottom controls */}
+      <div className="absolute inset-0 overflow-hidden">
+        <AnimatePresence initial={false} mode="sync">
+          <motion.div
+            key={`bg-${index}`}
+            initial={{ opacity: 0, scale: 1.06 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.02 }}
+            transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
+            className="absolute inset-0"
+          >
+            <Wireframe fill label={slide.plate} sublabel={slide.sub} />
+          </motion.div>
+        </AnimatePresence>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/30 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/30 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/40 pointer-events-none" />
+      </div>
 
       {/* Top framing marks */}
       <div className="absolute top-24 md:top-28 left-6 md:left-10 text-[9px] md:text-[10px] tracking-[0.3em] text-[#b89a6a]/80 flex items-center gap-3 z-[5]">
