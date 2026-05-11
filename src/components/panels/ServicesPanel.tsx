@@ -94,25 +94,6 @@ export default function ServicesPanel() {
         </div>
       </div>
 
-      {/* Workflow */}
-      <div className="border-t border-[#f0ece4]/10 pt-10">
-        <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-8">The Workflow</div>
-        <div className="grid md:grid-cols-5 gap-6">
-          {[
-            { n: "01", s: "Brief", d: "You bring the script. We read." },
-            { n: "02", s: "Scout", d: "Recce, stage selection, budget." },
-            { n: "03", s: "Crew", d: "HODs locked, permits filed." },
-            { n: "04", s: "Shoot", d: "On-estate or anywhere in SA." },
-            { n: "05", s: "Deliver", d: "Post in-house or partnered." },
-          ].map((w) => (
-            <div key={w.n} className="p-6 border border-[#f0ece4]/10">
-              <div className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-2xl">{w.n}</div>
-              <div className="mt-3 font-[Cormorant_Garamond] text-2xl text-[#f0ece4]">{w.s}</div>
-              <p className="mt-2 text-xs text-[#f0ece4]/50 font-light">{w.d}</p>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

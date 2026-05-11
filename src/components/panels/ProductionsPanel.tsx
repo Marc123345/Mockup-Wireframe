@@ -24,18 +24,6 @@ export default function ProductionsPanel() {
             — Sir Ridley Scott · Raised By Wolves
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-6 border-t border-[#f0ece4]/10 pt-8">
-          {[
-            { n: "40+", l: "Projects" },
-            { n: "12", l: "Countries" },
-            { n: "08", l: "Networks" },
-          ].map((s) => (
-            <div key={s.l}>
-              <div className="font-[Cormorant_Garamond] text-4xl font-light text-[#f0ece4]">{s.n}</div>
-              <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] mt-1 uppercase">{s.l}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Productions grid */}
@@ -56,20 +44,6 @@ export default function ProductionsPanel() {
         ))}
       </div>
 
-      {/* Clients strip */}
-      <div className="border-t border-[#f0ece4]/10 pt-10">
-        <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] uppercase font-light mb-6">Networks & Partners</div>
-        <div className="flex flex-wrap gap-x-10 gap-y-4 font-[Cormorant_Garamond] italic text-xl md:text-2xl text-[#f0ece4]/50">
-          {["HBO", "Netflix", "Apple TV+", "Paramount", "STARZ", "Cinemax", "AMC", "Amazon MGM"].map((c) => (
-            <span key={c}>{c}</span>
-          ))}
-        </div>
-      </div>
-
-      <a href="#" className="inline-flex items-center gap-3 text-[11px] tracking-[0.3em] uppercase font-light text-[#f0ece4] hover:text-[#b89a6a] transition">
-        Full Filmography
-        <span className="w-14 h-px bg-current" />
-      </a>
     </div>
   );
 }

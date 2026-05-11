@@ -47,25 +47,6 @@ export default function StudioPanel() {
         </div>
       </div>
 
-      {/* Travel matrix */}
-      <div className="border-t border-[#f0ece4]/10 pt-10">
-        <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-8">
-          Travel Matrix · from Estate
-        </div>
-        <div className="grid md:grid-cols-4 gap-px bg-[#f0ece4]/5">
-          {[
-            { l: "CPT Airport", v: "30 min" },
-            { l: "Cape Town CBD", v: "45 min" },
-            { l: "Atlantic Seaboard", v: "50 min" },
-            { l: "Wine Country (Stellenbosch)", v: "15 min" },
-          ].map((t) => (
-            <div key={t.l} className="bg-[#0a0a0a] p-6">
-              <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/50 uppercase font-light">{t.l}</div>
-              <div className="mt-3 font-[Cormorant_Garamond] text-3xl text-[#f0ece4] font-light">{t.v}</div>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }
