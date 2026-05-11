@@ -51,18 +51,18 @@ export default function Shows() {
         >
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <span className="w-10 h-px bg-[#c8a86a]" />
-              <span className="text-[11px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">
+              <span className="w-10 h-px bg-[#b89a6a]" />
+              <span className="text-[11px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">
                 Selected Work
               </span>
             </div>
-            <h2 className="font-[Cormorant_Garamond] text-6xl md:text-8xl font-light leading-none tracking-tight text-[#ebe4d4]">
+            <h2 className="font-[Cormorant_Garamond] text-6xl md:text-8xl font-light leading-none tracking-tight text-[#f0ece4]">
               Productions.
             </h2>
           </div>
           <a
             href="#"
-            className="hidden md:inline-flex text-[11px] tracking-[0.3em] uppercase font-light text-[#ebe4d4]/60 hover:text-[#ebe4d4] transition"
+            className="hidden md:inline-flex text-[11px] tracking-[0.3em] uppercase font-light text-[#f0ece4]/60 hover:text-[#f0ece4] transition"
           >
             Full Gallery →
           </a>
@@ -88,24 +88,24 @@ export default function Shows() {
               className="absolute inset-0 bg-cover bg-center transition duration-1000 group-hover:scale-105"
               style={{ backgroundImage: `url('${p.img}')` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a] via-[#0b0b0a]/30 to-transparent" />
-            <div className="absolute inset-0 border border-transparent group-hover:border-[#c8a86a]/50 transition" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
+            <div className="absolute inset-0 border border-transparent group-hover:border-[#b89a6a]/50 transition" />
 
-            <div className="absolute top-5 left-5 text-[10px] tracking-[0.3em] font-light text-[#c8a86a]">
+            <div className="absolute top-5 left-5 text-[10px] tracking-[0.3em] font-light text-[#b89a6a]">
               {p.tag}
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <div className="text-[10px] tracking-[0.3em] text-[#ebe4d4]/60 mb-2 uppercase">
+              <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/60 mb-2 uppercase">
                 {p.meta}
               </div>
-              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light leading-tight text-[#ebe4d4]">
+              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light leading-tight text-[#f0ece4]">
                 {p.title}
               </div>
-              <div className="mt-3 font-[Cormorant_Garamond] italic text-[#ebe4d4]/60">
+              <div className="mt-3 font-[Cormorant_Garamond] italic text-[#f0ece4]/60">
                 {p.director}
               </div>
-              <div className="mt-5 flex items-center gap-3 text-[10px] tracking-[0.3em] text-[#ebe4d4]/0 group-hover:text-[#ebe4d4] transition">
+              <div className="mt-5 flex items-center gap-3 text-[10px] tracking-[0.3em] text-[#f0ece4]/0 group-hover:text-[#f0ece4] transition">
                 VIEW CASE
                 <span className="w-10 h-px bg-current" />
               </div>

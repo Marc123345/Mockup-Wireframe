@@ -12,18 +12,18 @@ export default function FacilitiesPanel() {
   return (
     <div className="space-y-16">
       <div className="grid md:grid-cols-[1.3fr_1fr] gap-10 items-end">
-        <p className="max-w-2xl text-lg md:text-xl text-[#ebe4d4]/75 font-light leading-relaxed">
+        <p className="max-w-2xl text-lg md:text-xl text-[#f0ece4]/75 font-light leading-relaxed">
           Five cutting-edge sound stages on a 4,000-hectare private estate.
           Purpose-built for episodic and feature work — from practical tank
           shoots to full LED virtual production.
         </p>
-        <div className="text-[10px] tracking-[0.3em] text-[#c8a86a] font-light uppercase">
+        <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] font-light uppercase">
           Facility map available on request
         </div>
       </div>
 
       {/* Stat row */}
-      <div className="grid md:grid-cols-4 gap-8 pb-10 border-b border-[#ebe4d4]/10">
+      <div className="grid md:grid-cols-4 gap-8 pb-10 border-b border-[#f0ece4]/10">
         {[
           { n: "5", l: "Stages" },
           { n: "88,000", l: "Sq Ft · Total" },
@@ -31,8 +31,8 @@ export default function FacilitiesPanel() {
           { n: "30 min", l: "From CPT Airport" },
         ].map((s) => (
           <div key={s.l}>
-            <div className="font-[Cormorant_Garamond] text-5xl md:text-6xl font-light text-[#ebe4d4]">{s.n}</div>
-            <div className="text-[10px] tracking-[0.3em] text-[#c8a86a] mt-2 uppercase font-light">{s.l}</div>
+            <div className="font-[Cormorant_Garamond] text-5xl md:text-6xl font-light text-[#f0ece4]">{s.n}</div>
+            <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] mt-2 uppercase font-light">{s.l}</div>
           </div>
         ))}
       </div>
@@ -41,8 +41,8 @@ export default function FacilitiesPanel() {
       <div className="grid md:grid-cols-[1fr_1.2fr] gap-8 items-start">
         <Wireframe ratio="aspect-[4/3]" label="SITE PLAN · LOURENSFORD ESTATE" sublabel="5 stages · workshops · catering · housing" />
         <div className="space-y-4">
-          <div className="text-[10px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">Adjacent Infrastructure</div>
-          <ul className="space-y-3 text-sm text-[#ebe4d4]/70 font-light">
+          <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">Adjacent Infrastructure</div>
+          <ul className="space-y-3 text-sm text-[#f0ece4]/70 font-light">
             {[
               "Production offices — 12,000 sq ft",
               "Carpentry, paint, and construction workshops",
@@ -52,8 +52,8 @@ export default function FacilitiesPanel() {
               "Secure vehicle and equipment yards",
               "Helipad · fire & medical standby",
             ].map((i) => (
-              <li key={i} className="flex gap-3 pt-3 border-t border-[#ebe4d4]/5">
-                <span className="text-[#c8a86a] text-xs mt-1">◆</span>
+              <li key={i} className="flex gap-3 pt-3 border-t border-[#f0ece4]/5">
+                <span className="text-[#b89a6a] text-xs mt-1">◆</span>
                 {i}
               </li>
             ))}
@@ -62,16 +62,16 @@ export default function FacilitiesPanel() {
       </div>
 
       {/* Stage list */}
-      <div className="space-y-px bg-[#ebe4d4]/5">
+      <div className="space-y-px bg-[#f0ece4]/5">
         {stages.map((s, i) => (
-          <div key={s.n} className="group bg-[#0b0b0a] hover:bg-[#ebe4d4]/[0.02] p-8 md:p-10 grid md:grid-cols-[60px_1fr_auto_auto] gap-6 md:gap-10 items-center transition">
-            <div className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-3xl">0{i + 1}</div>
+          <div key={s.n} className="group bg-[#0a0a0a] hover:bg-[#f0ece4]/[0.02] p-8 md:p-10 grid md:grid-cols-[60px_1fr_auto_auto] gap-6 md:gap-10 items-center transition">
+            <div className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-3xl">0{i + 1}</div>
             <div>
-              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light text-[#ebe4d4]">{s.n}</div>
-              <p className="mt-2 text-sm text-[#ebe4d4]/60 font-light max-w-xl">{s.d}</p>
+              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light text-[#f0ece4]">{s.n}</div>
+              <p className="mt-2 text-sm text-[#f0ece4]/60 font-light max-w-xl">{s.d}</p>
             </div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-[#ebe4d4]/50 font-light">{s.h}</div>
-            <div className="text-[11px] tracking-[0.3em] uppercase text-[#c8a86a] font-light">{s.s}</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-[#f0ece4]/50 font-light">{s.h}</div>
+            <div className="text-[11px] tracking-[0.3em] uppercase text-[#b89a6a] font-light">{s.s}</div>
           </div>
         ))}
       </div>

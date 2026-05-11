@@ -119,18 +119,18 @@ export default function Hero() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a] via-[#0b0b0a]/70 to-[#0b0b0a]/30 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0b0b0a]/80 via-transparent to-[#0b0b0a]/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/40 pointer-events-none" />
 
       {/* Top framing marks */}
-      <div className="absolute top-24 md:top-28 left-6 md:left-10 text-[9px] md:text-[10px] tracking-[0.3em] text-[#c8a86a]/80 flex items-center gap-3 z-[5]">
+      <div className="absolute top-24 md:top-28 left-6 md:left-10 text-[9px] md:text-[10px] tracking-[0.3em] text-[#b89a6a]/80 flex items-center gap-3 z-[5]">
         <span>
           {String(index + 1).padStart(2, "0")} · {slide.meta.split(" · ")[1]}
         </span>
-        <span className="hidden md:block w-10 h-px bg-[#c8a86a]/40" />
+        <span className="hidden md:block w-10 h-px bg-[#b89a6a]/40" />
         <span className="hidden md:inline">CAPE TOWN · 33.9°S</span>
       </div>
-      <div className="absolute top-28 right-6 md:right-10 text-[10px] tracking-[0.3em] text-[#c8a86a]/80 hidden md:block z-[5]">
+      <div className="absolute top-28 right-6 md:right-10 text-[10px] tracking-[0.3em] text-[#b89a6a]/80 hidden md:block z-[5]">
         {slide.meta}
       </div>
 
@@ -146,8 +146,8 @@ export default function Hero() {
               exit="exit"
               className="flex items-center gap-3 mb-8"
             >
-              <span className="w-10 h-px bg-[#c8a86a]" />
-              <span className="text-[11px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">
+              <span className="w-10 h-px bg-[#b89a6a]" />
+              <span className="text-[11px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">
                 {slide.eyebrow}
               </span>
             </motion.div>
@@ -158,13 +158,13 @@ export default function Hero() {
               initial="hidden"
               animate="show"
               exit="exit"
-              className="font-[Cormorant_Garamond] font-light tracking-[-0.02em] leading-[0.95] text-[10.5vw] md:text-[8.5vw] lg:text-[8rem] text-[#ebe4d4]"
+              className="font-[Cormorant_Garamond] font-light tracking-[-0.02em] leading-[0.95] text-[10.5vw] md:text-[8.5vw] lg:text-[8rem] text-[#f0ece4]"
             >
               {slide.headline.map((w, i) =>
                 w ? (
                   <span key={i}>
                     {i === slide.emphasis ? (
-                      <span className="italic text-[#c8a86a]">{w} </span>
+                      <span className="italic text-[#b89a6a]">{w} </span>
                     ) : (
                       <>{w} </>
                     )}
@@ -182,7 +182,7 @@ export default function Hero() {
               initial="hidden"
               animate="show"
               exit="exit"
-              className="mt-10 max-w-xl text-[#ebe4d4]/70 text-lg leading-relaxed font-light"
+              className="mt-10 max-w-xl text-[#f0ece4]/70 text-lg leading-relaxed font-light"
             >
               {slide.body}
             </motion.p>
@@ -197,14 +197,14 @@ export default function Hero() {
             >
               <a
                 href="#"
-                className="group inline-flex items-center gap-3 bg-[#ebe4d4] text-[#0b0b0a] px-8 py-4 text-[11px] font-medium tracking-[0.3em] uppercase hover:bg-[#c8a86a] transition"
+                className="group inline-flex items-center gap-3 bg-[#f0ece4] text-[#0a0a0a] px-8 py-4 text-[11px] font-medium tracking-[0.3em] uppercase hover:bg-[#b89a6a] transition"
               >
                 {slide.ctaA}
-                <span className="w-5 h-px bg-[#0b0b0a] group-hover:w-10 transition-all" />
+                <span className="w-5 h-px bg-[#0a0a0a] group-hover:w-10 transition-all" />
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-3 border border-[#ebe4d4]/20 hover:border-[#ebe4d4]/60 px-8 py-4 text-[11px] font-light tracking-[0.3em] uppercase backdrop-blur-sm transition text-[#ebe4d4]"
+                className="inline-flex items-center gap-3 border border-[#f0ece4]/20 hover:border-[#f0ece4]/60 px-8 py-4 text-[11px] font-light tracking-[0.3em] uppercase backdrop-blur-sm transition text-[#f0ece4]"
               >
                 {slide.ctaB}
               </a>
@@ -213,36 +213,36 @@ export default function Hero() {
         </AnimatePresence>
 
         {/* Controls row */}
-        <div className="mt-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8 pt-8 border-t border-[#ebe4d4]/10 relative z-10">
+        <div className="mt-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8 pt-8 border-t border-[#f0ece4]/10 relative z-10">
           {/* Dots + pager */}
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-3">
               <button
                 onClick={() => go(-1)}
                 aria-label="Previous slide"
-                className="group w-11 h-11 border border-[#ebe4d4]/20 hover:border-[#c8a86a] grid place-items-center transition"
+                className="group w-11 h-11 border border-[#f0ece4]/20 hover:border-[#b89a6a] grid place-items-center transition"
               >
-                <span className="text-[#ebe4d4] group-hover:text-[#c8a86a] transition text-sm">
+                <span className="text-[#f0ece4] group-hover:text-[#b89a6a] transition text-sm">
                   ←
                 </span>
               </button>
               <button
                 onClick={() => go(1)}
                 aria-label="Next slide"
-                className="group w-11 h-11 border border-[#ebe4d4]/20 hover:border-[#c8a86a] grid place-items-center transition"
+                className="group w-11 h-11 border border-[#f0ece4]/20 hover:border-[#b89a6a] grid place-items-center transition"
               >
-                <span className="text-[#ebe4d4] group-hover:text-[#c8a86a] transition text-sm">
+                <span className="text-[#f0ece4] group-hover:text-[#b89a6a] transition text-sm">
                   →
                 </span>
               </button>
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-3xl">
+              <span className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-3xl">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="w-10 h-px bg-[#ebe4d4]/20" />
-              <span className="text-[11px] tracking-[0.3em] text-[#ebe4d4]/40 font-light">
+              <span className="w-10 h-px bg-[#f0ece4]/20" />
+              <span className="text-[11px] tracking-[0.3em] text-[#f0ece4]/40 font-light">
                 {String(slides.length).padStart(2, "0")}
               </span>
             </div>
@@ -256,14 +256,14 @@ export default function Hero() {
                 onClick={() => setIndex(i)}
                 className={`group flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase font-light transition ${
                   i === index
-                    ? "text-[#ebe4d4]"
-                    : "text-[#ebe4d4]/30 hover:text-[#ebe4d4]/60"
+                    ? "text-[#f0ece4]"
+                    : "text-[#f0ece4]/30 hover:text-[#f0ece4]/60"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               >
-                <span className="relative inline-block w-10 h-px bg-[#ebe4d4]/15 overflow-hidden">
+                <span className="relative inline-block w-10 h-px bg-[#f0ece4]/15 overflow-hidden">
                   <motion.span
-                    className="absolute inset-y-0 left-0 bg-[#c8a86a]"
+                    className="absolute inset-y-0 left-0 bg-[#b89a6a]"
                     initial={false}
                     animate={{
                       width: i === index ? (paused ? "100%" : "100%") : "0%",
@@ -284,7 +284,7 @@ export default function Hero() {
       </div>
 
       {/* Pause indicator */}
-      <div className="absolute bottom-6 right-6 md:right-10 text-[9px] tracking-[0.3em] text-[#ebe4d4]/30 uppercase z-10">
+      <div className="absolute bottom-6 right-6 md:right-10 text-[9px] tracking-[0.3em] text-[#f0ece4]/30 uppercase z-10">
         {paused ? "◧ Paused" : "▸ Auto · 7s"}
       </div>
     </section>

@@ -11,7 +11,7 @@ export default function App() {
   const [active, setActive] = useState<CardKey | null>(null);
 
   return (
-    <div className="grain relative min-h-screen bg-[#0b0b0a] text-[#ebe4d4] overflow-x-hidden">
+    <div className="grain relative min-h-screen bg-[#0a0a0a] text-[#f0ece4] overflow-x-hidden">
       <Nav />
       <Hero />
       <Marquee />

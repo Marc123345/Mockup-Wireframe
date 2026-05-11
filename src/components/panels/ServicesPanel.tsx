@@ -31,28 +31,28 @@ export default function ServicesPanel() {
   return (
     <div className="space-y-16">
       <div className="grid md:grid-cols-[1.3fr_1fr] gap-10">
-        <p className="max-w-2xl text-lg md:text-xl text-[#ebe4d4]/75 font-light leading-relaxed">
+        <p className="max-w-2xl text-lg md:text-xl text-[#f0ece4]/75 font-light leading-relaxed">
           One partner. Every department. NV Films handles everything so your
           production only handles the creative.
         </p>
         <Wireframe ratio="aspect-[5/3]" label="DEPARTMENT DIAGRAM" sublabel="Production ↔ Studio ↔ Post" />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-px bg-[#ebe4d4]/5">
+      <div className="grid md:grid-cols-2 gap-px bg-[#f0ece4]/5">
         {services.map((s) => (
-          <div key={s.n} className="bg-[#0b0b0a] p-10 hover:bg-[#ebe4d4]/[0.02] transition group flex flex-col gap-8">
+          <div key={s.n} className="bg-[#0a0a0a] p-10 hover:bg-[#f0ece4]/[0.02] transition group flex flex-col gap-8">
             <div className="flex items-start justify-between">
-              <div className="text-[10px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">Service · {s.n}</div>
-              <div className="font-[Cormorant_Garamond] italic text-[#ebe4d4]/20 group-hover:text-[#c8a86a]/40 transition text-5xl">{s.n}</div>
+              <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">Service · {s.n}</div>
+              <div className="font-[Cormorant_Garamond] italic text-[#f0ece4]/20 group-hover:text-[#b89a6a]/40 transition text-5xl">{s.n}</div>
             </div>
             <div>
-              <h3 className="font-[Cormorant_Garamond] text-4xl md:text-5xl font-light text-[#ebe4d4]">{s.t}</h3>
-              <p className="mt-4 text-sm text-[#ebe4d4]/60 font-light leading-relaxed max-w-sm">{s.d}</p>
+              <h3 className="font-[Cormorant_Garamond] text-4xl md:text-5xl font-light text-[#f0ece4]">{s.t}</h3>
+              <p className="mt-4 text-sm text-[#f0ece4]/60 font-light leading-relaxed max-w-sm">{s.d}</p>
             </div>
-            <ul className="space-y-2 text-sm text-[#ebe4d4]/70 font-light">
+            <ul className="space-y-2 text-sm text-[#f0ece4]/70 font-light">
               {s.items.map((i) => (
-                <li key={i} className="flex gap-3 pb-2 border-b border-[#ebe4d4]/5">
-                  <span className="text-[#c8a86a] text-xs mt-1">◆</span>
+                <li key={i} className="flex gap-3 pb-2 border-b border-[#f0ece4]/5">
+                  <span className="text-[#b89a6a] text-xs mt-1">◆</span>
                   {i}
                 </li>
               ))}
@@ -62,8 +62,8 @@ export default function ServicesPanel() {
       </div>
 
       {/* Workflow */}
-      <div className="border-t border-[#ebe4d4]/10 pt-10">
-        <div className="text-[10px] tracking-[0.4em] text-[#c8a86a] font-light uppercase mb-8">The Workflow</div>
+      <div className="border-t border-[#f0ece4]/10 pt-10">
+        <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light uppercase mb-8">The Workflow</div>
         <div className="grid md:grid-cols-5 gap-6">
           {[
             { n: "01", s: "Brief", d: "You bring the script. We read." },
@@ -72,10 +72,10 @@ export default function ServicesPanel() {
             { n: "04", s: "Shoot", d: "On-estate or anywhere in SA." },
             { n: "05", s: "Deliver", d: "Post in-house or partnered." },
           ].map((w) => (
-            <div key={w.n} className="p-6 border border-[#ebe4d4]/10">
-              <div className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-2xl">{w.n}</div>
-              <div className="mt-3 font-[Cormorant_Garamond] text-2xl text-[#ebe4d4]">{w.s}</div>
-              <p className="mt-2 text-xs text-[#ebe4d4]/50 font-light">{w.d}</p>
+            <div key={w.n} className="p-6 border border-[#f0ece4]/10">
+              <div className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-2xl">{w.n}</div>
+              <div className="mt-3 font-[Cormorant_Garamond] text-2xl text-[#f0ece4]">{w.s}</div>
+              <p className="mt-2 text-xs text-[#f0ece4]/50 font-light">{w.d}</p>
             </div>
           ))}
         </div>

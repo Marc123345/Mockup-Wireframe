@@ -19,17 +19,17 @@ export default function About() {
                   "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&auto=format&fit=crop')",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a]/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
-              <div className="text-[10px] tracking-[0.3em] text-[#c8a86a] uppercase">
+              <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] uppercase">
                 Lourensford Estate · Somerset West
               </div>
-              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light italic mt-2 text-[#ebe4d4]">
+              <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light italic mt-2 text-[#f0ece4]">
                 4,000 hectares of location.
               </div>
             </div>
           </div>
-          <div className="absolute -top-4 -right-4 -z-10 w-full h-full border border-[#c8a86a]/40" />
+          <div className="absolute -top-4 -right-4 -z-10 w-full h-full border border-[#b89a6a]/40" />
         </motion.div>
 
         <motion.div
@@ -40,21 +40,21 @@ export default function About() {
           className="lg:col-span-6"
         >
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-10 h-px bg-[#c8a86a]" />
-            <span className="text-[11px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">
+            <span className="w-10 h-px bg-[#b89a6a]" />
+            <span className="text-[11px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">
               The Studio
             </span>
           </div>
 
-          <h2 className="font-[Cormorant_Garamond] text-5xl md:text-7xl font-light leading-[1.02] tracking-tight text-[#ebe4d4]">
+          <h2 className="font-[Cormorant_Garamond] text-5xl md:text-7xl font-light leading-[1.02] tracking-tight text-[#f0ece4]">
             One estate.
             <br />
-            Every <span className="italic text-[#c8a86a]">location</span>.
+            Every <span className="italic text-[#b89a6a]">location</span>.
             <br />
             One ecosystem.
           </h2>
 
-          <p className="mt-10 text-[#ebe4d4]/70 text-lg leading-relaxed max-w-xl font-light">
+          <p className="mt-10 text-[#f0ece4]/70 text-lg leading-relaxed max-w-xl font-light">
             NV Film Studios Africa is a single-site production solution set
             on a 4,000-hectare private property in Somerset West, minutes
             from Cape Town International. Five cutting-edge sound stages,
@@ -63,16 +63,16 @@ export default function About() {
           </p>
 
           <div className="mt-10 grid grid-cols-2 gap-8 max-w-lg">
-            <div className="border-l border-[#c8a86a]/60 pl-5">
-              <div className="text-[10px] tracking-[0.3em] text-[#ebe4d4]/50 uppercase">
+            <div className="border-l border-[#b89a6a]/60 pl-5">
+              <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/50 uppercase">
                 Hosted
               </div>
               <div className="font-[Cormorant_Garamond] text-xl italic mt-2">
                 Raised By Wolves · Warrior · Black Sails
               </div>
             </div>
-            <div className="border-l border-[#c8a86a]/60 pl-5">
-              <div className="text-[10px] tracking-[0.3em] text-[#ebe4d4]/50 uppercase">
+            <div className="border-l border-[#b89a6a]/60 pl-5">
+              <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/50 uppercase">
                 Ops
               </div>
               <div className="font-[Cormorant_Garamond] text-xl italic mt-2">
@@ -83,7 +83,7 @@ export default function About() {
 
           <a
             href="#"
-            className="mt-14 inline-flex items-center gap-4 text-[11px] tracking-[0.3em] uppercase font-light text-[#ebe4d4] hover:text-[#c8a86a] transition"
+            className="mt-14 inline-flex items-center gap-4 text-[11px] tracking-[0.3em] uppercase font-light text-[#f0ece4] hover:text-[#b89a6a] transition"
           >
             Read the Studio Story
             <span className="w-14 h-px bg-current" />

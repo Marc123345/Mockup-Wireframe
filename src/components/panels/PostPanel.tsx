@@ -11,23 +11,23 @@ export default function PostPanel() {
   return (
     <div className="space-y-16">
       <div className="grid md:grid-cols-[1.3fr_1fr] gap-10">
-        <p className="max-w-2xl text-lg md:text-xl text-[#ebe4d4]/75 font-light leading-relaxed">
+        <p className="max-w-2xl text-lg md:text-xl text-[#f0ece4]/75 font-light leading-relaxed">
           Finish on the estate. In-house edit, color, sound, and VFX — or
           plug straight into your preferred post house. Either way, you
           sleep on site.
         </p>
-        <div className="space-y-3 font-light text-sm text-[#ebe4d4]/60">
-          <div className="flex justify-between border-b border-[#ebe4d4]/10 pb-3">
+        <div className="space-y-3 font-light text-sm text-[#f0ece4]/60">
+          <div className="flex justify-between border-b border-[#f0ece4]/10 pb-3">
             <span>Deliverables</span>
-            <span className="text-[#ebe4d4]">Theatrical · Streaming · Broadcast</span>
+            <span className="text-[#f0ece4]">Theatrical · Streaming · Broadcast</span>
           </div>
-          <div className="flex justify-between border-b border-[#ebe4d4]/10 pb-3">
+          <div className="flex justify-between border-b border-[#f0ece4]/10 pb-3">
             <span>Formats</span>
-            <span className="text-[#ebe4d4]">4K · 8K · HDR · Dolby Vision · Atmos</span>
+            <span className="text-[#f0ece4]">4K · 8K · HDR · Dolby Vision · Atmos</span>
           </div>
           <div className="flex justify-between">
             <span>Remote</span>
-            <span className="text-[#ebe4d4]">Encrypted review · Global clients</span>
+            <span className="text-[#f0ece4]">Encrypted review · Global clients</span>
           </div>
         </div>
       </div>
@@ -37,25 +37,25 @@ export default function PostPanel() {
           <div key={c.t}>
             <Wireframe ratio="aspect-[5/4]" label={`${c.t.toUpperCase()} BAY`} sublabel="Suite layout · reference monitors" />
             <div className="mt-5 grid grid-cols-[auto_1fr] gap-4">
-              <div className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-2xl">0{i + 1}</div>
+              <div className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-2xl">0{i + 1}</div>
               <div>
-                <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light text-[#ebe4d4]">{c.t}</div>
-                <p className="mt-3 text-sm text-[#ebe4d4]/60 font-light leading-relaxed max-w-md">{c.d}</p>
+                <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light text-[#f0ece4]">{c.t}</div>
+                <p className="mt-3 text-sm text-[#f0ece4]/60 font-light leading-relaxed max-w-md">{c.d}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="border-t border-[#ebe4d4]/10 pt-10 grid md:grid-cols-3 gap-6">
+      <div className="border-t border-[#f0ece4]/10 pt-10 grid md:grid-cols-3 gap-6">
         {[
           { n: "4", l: "Edit Bays" },
           { n: "2", l: "Grade Suites · HDR" },
           { n: "1", l: "Atmos Mix Stage" },
         ].map((s) => (
-          <div key={s.l} className="flex items-end justify-between border-b border-[#ebe4d4]/5 pb-5">
-            <div className="font-[Cormorant_Garamond] text-5xl font-light text-[#ebe4d4]">{s.n}</div>
-            <div className="text-[10px] tracking-[0.3em] text-[#c8a86a] uppercase font-light">{s.l}</div>
+          <div key={s.l} className="flex items-end justify-between border-b border-[#f0ece4]/5 pb-5">
+            <div className="font-[Cormorant_Garamond] text-5xl font-light text-[#f0ece4]">{s.n}</div>
+            <div className="text-[10px] tracking-[0.3em] text-[#b89a6a] uppercase font-light">{s.l}</div>
           </div>
         ))}
       </div>

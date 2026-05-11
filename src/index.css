@@ -1,24 +1,32 @@
 @import "tailwindcss";
 
+/* NV Films palette
+   Ink    — #0a0a0a  deep cinematic black
+   Ivory  — #f0ece4  warm off-white (their site background)
+   Silver — #c8c4bc  cool neutral for secondary text
+   Gold   — #b89a6a  refined champagne (cooler than original amber)
+   Slate  — #1c1c1c  mid-dark for cards / surfaces
+*/
 @theme {
   --font-display: "Inter", "Helvetica Neue", sans-serif;
-  --color-ink: #0b0b0a;
-  --color-bone: #ebe4d4;
-  --color-amber: #c8a86a;
-  --color-forest: #2d3a2a;
+  --color-ink:    #0a0a0a;
+  --color-ivory:  #f0ece4;
+  --color-silver: #c8c4bc;
+  --color-gold:   #b89a6a;
+  --color-slate:  #1c1c1c;
 }
 
 html, body, #root {
-  background: #0b0b0a;
-  color: #ebe4d4;
+  background: #0a0a0a;
+  color: #f0ece4;
   font-family: var(--font-display);
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
 
 ::selection {
-  background: #c8a86a;
-  color: #0b0b0a;
+  background: #b89a6a;
+  color: #0a0a0a;
 }
 
 .grain::before {
@@ -27,7 +35,7 @@ html, body, #root {
   inset: 0;
   pointer-events: none;
   z-index: 100;
-  opacity: 0.05;
+  opacity: 0.04;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
@@ -48,7 +56,7 @@ html, body, #root {
 .scrollbar-hide { scrollbar-width: none; }
 
 .cinematic-gradient {
-  background: radial-gradient(ellipse at 20% 30%, rgba(200,168,106,0.25), transparent 55%),
-              radial-gradient(ellipse at 80% 70%, rgba(45,58,42,0.5), transparent 60%),
-              linear-gradient(180deg, #0b0b0a 0%, #1a1612 50%, #0b0b0a 100%);
+  background: radial-gradient(ellipse at 20% 30%, rgba(184,154,106,0.18), transparent 55%),
+              radial-gradient(ellipse at 80% 70%, rgba(28,28,28,0.8), transparent 60%),
+              linear-gradient(180deg, #0a0a0a 0%, #141210 50%, #0a0a0a 100%);
 }

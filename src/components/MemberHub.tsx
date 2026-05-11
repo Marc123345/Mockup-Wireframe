@@ -29,7 +29,7 @@ const stages = [
 
 export default function MemberHub() {
   return (
-    <section className="relative py-32 px-6 md:px-10 overflow-hidden border-t border-[#ebe4d4]/5">
+    <section className="relative py-32 px-6 md:px-10 overflow-hidden border-t border-[#f0ece4]/5">
       <div className="absolute inset-0 -z-10 cinematic-gradient" />
 
       <div className="max-w-[1440px] mx-auto">
@@ -42,18 +42,18 @@ export default function MemberHub() {
         >
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
-              <span className="w-10 h-px bg-[#c8a86a]" />
-              <span className="text-[11px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">
+              <span className="w-10 h-px bg-[#b89a6a]" />
+              <span className="text-[11px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">
                 Facilities
               </span>
             </div>
-            <h2 className="font-[Cormorant_Garamond] text-6xl md:text-8xl font-light leading-[1] tracking-tight text-[#ebe4d4]">
+            <h2 className="font-[Cormorant_Garamond] text-6xl md:text-8xl font-light leading-[1] tracking-tight text-[#f0ece4]">
               Five stages.
               <br />
-              <span className="italic text-[#c8a86a]">Infinite</span> setups.
+              <span className="italic text-[#b89a6a]">Infinite</span> setups.
             </h2>
           </div>
-          <p className="text-[#ebe4d4]/70 max-w-sm font-light leading-relaxed">
+          <p className="text-[#f0ece4]/70 max-w-sm font-light leading-relaxed">
             Purpose-built for episodic and feature work — from practical
             tank shoots to full virtual-production LED volumes.
           </p>
@@ -77,20 +77,20 @@ export default function MemberHub() {
                 className="absolute inset-0 bg-cover bg-center transition duration-1000 group-hover:scale-105"
                 style={{ backgroundImage: `url('${s.img}')` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a] via-[#0b0b0a]/40 to-[#0b0b0a]/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-[#0a0a0a]/10" />
 
-              <div className="absolute top-5 left-5 text-[10px] tracking-[0.3em] font-light text-[#c8a86a]">
+              <div className="absolute top-5 left-5 text-[10px] tracking-[0.3em] font-light text-[#b89a6a]">
                 0{i + 1}
               </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <div className="text-[10px] tracking-[0.3em] text-[#ebe4d4]/60 uppercase">
+                <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/60 uppercase">
                   {s.size}
                 </div>
-                <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light mt-2 text-[#ebe4d4]">
+                <div className="font-[Cormorant_Garamond] text-3xl md:text-4xl font-light mt-2 text-[#f0ece4]">
                   {s.name}
                 </div>
-                <p className="mt-3 text-sm text-[#ebe4d4]/70 font-light max-w-md leading-relaxed">
+                <p className="mt-3 text-sm text-[#f0ece4]/70 font-light max-w-md leading-relaxed">
                   {s.note}
                 </p>
               </div>
@@ -106,14 +106,14 @@ export default function MemberHub() {
           transition={{ duration: 1, delay: 0.2 }}
           className="mt-24 max-w-4xl mx-auto text-center"
         >
-          <div className="text-[10px] tracking-[0.4em] text-[#c8a86a] font-light mb-8 uppercase">
+          <div className="text-[10px] tracking-[0.4em] text-[#b89a6a] font-light mb-8 uppercase">
             ✦ ✦ ✦
           </div>
-          <p className="font-[Cormorant_Garamond] italic text-3xl md:text-5xl font-light leading-[1.15] text-[#ebe4d4]">
+          <p className="font-[Cormorant_Garamond] italic text-3xl md:text-5xl font-light leading-[1.15] text-[#f0ece4]">
             "Every morning this tablecloth of cloud would come in — half the
             work was done."
           </p>
-          <div className="mt-8 text-[11px] tracking-[0.3em] text-[#ebe4d4]/60 uppercase">
+          <div className="mt-8 text-[11px] tracking-[0.3em] text-[#f0ece4]/60 uppercase">
             — Sir Ridley Scott · on shooting Raised By Wolves
           </div>
         </motion.blockquote>

@@ -19,16 +19,16 @@ export default function CardGrid({ onOpen }: Props) {
         >
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <span className="w-10 h-px bg-[#c8a86a]" />
-              <span className="text-[11px] tracking-[0.4em] text-[#c8a86a] font-light uppercase">
+              <span className="w-10 h-px bg-[#b89a6a]" />
+              <span className="text-[11px] tracking-[0.4em] text-[#b89a6a] font-light uppercase">
                 The Index
               </span>
             </div>
-            <h2 className="font-[Cormorant_Garamond] text-5xl md:text-7xl font-light leading-none tracking-tight text-[#ebe4d4]">
-              Select a <span className="italic text-[#c8a86a]">chapter</span>.
+            <h2 className="font-[Cormorant_Garamond] text-5xl md:text-7xl font-light leading-none tracking-tight text-[#f0ece4]">
+              Select a <span className="italic text-[#b89a6a]">chapter</span>.
             </h2>
           </div>
-          <div className="hidden md:block text-[11px] tracking-[0.3em] text-[#ebe4d4]/40 uppercase font-light">
+          <div className="hidden md:block text-[11px] tracking-[0.3em] text-[#f0ece4]/40 uppercase font-light">
             06 Sections
           </div>
         </motion.div>

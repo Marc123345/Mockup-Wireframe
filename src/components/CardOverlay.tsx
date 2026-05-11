@@ -44,7 +44,7 @@ export default function CardOverlay({ activeKey, onClose }: Props) {
         <motion.div
           key={card.key}
           layoutId={`card-${card.key}`}
-          className="fixed inset-0 z-[80] bg-[#0b0b0a] overflow-y-auto"
+          className="fixed inset-0 z-[80] bg-[#0a0a0a] overflow-y-auto"
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="relative h-[60svh] md:h-[70svh] overflow-hidden">
@@ -58,21 +58,21 @@ export default function CardOverlay({ activeKey, onClose }: Props) {
                 sublabel="4K video or key still"
               />
             </motion.div>
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b0b0a] via-[#0b0b0a]/40 to-[#0b0b0a]/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-[#0a0a0a]/30" />
 
             <div className="absolute top-0 inset-x-0 p-6 md:p-10 flex items-center justify-between">
               <motion.div
                 layoutId={`card-number-${card.key}`}
-                className="font-[Cormorant_Garamond] italic text-[#c8a86a] text-xl"
+                className="font-[Cormorant_Garamond] italic text-[#b89a6a] text-xl"
               >
                 {card.number}
               </motion.div>
               <button
                 onClick={onClose}
-                className="group flex items-center gap-3 text-[11px] tracking-[0.3em] uppercase font-light text-[#ebe4d4] hover:text-[#c8a86a] transition"
+                className="group flex items-center gap-3 text-[11px] tracking-[0.3em] uppercase font-light text-[#f0ece4] hover:text-[#b89a6a] transition"
               >
                 <span>Close</span>
-                <span className="relative w-10 h-10 border border-[#ebe4d4]/30 group-hover:border-[#c8a86a] grid place-items-center transition">
+                <span className="relative w-10 h-10 border border-[#f0ece4]/30 group-hover:border-[#b89a6a] grid place-items-center transition">
                   <span className="absolute w-3 h-px bg-current rotate-45" />
                   <span className="absolute w-3 h-px bg-current -rotate-45" />
                 </span>
@@ -82,19 +82,19 @@ export default function CardOverlay({ activeKey, onClose }: Props) {
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 max-w-[1440px] mx-auto w-full">
               <motion.div
                 layoutId={`card-label-${card.key}`}
-                className="text-[10px] tracking-[0.4em] text-[#c8a86a] uppercase font-light mb-4"
+                className="text-[10px] tracking-[0.4em] text-[#b89a6a] uppercase font-light mb-4"
               >
                 {card.label}
               </motion.div>
               <motion.h1
                 layoutId={`card-title-${card.key}`}
-                className="font-[Cormorant_Garamond] text-7xl md:text-[10rem] font-light leading-[0.9] tracking-tight text-[#ebe4d4]"
+                className="font-[Cormorant_Garamond] text-7xl md:text-[10rem] font-light leading-[0.9] tracking-tight text-[#f0ece4]"
               >
                 {card.title}
               </motion.h1>
               <motion.div
                 layoutId={`card-tagline-${card.key}`}
-                className="mt-4 font-[Cormorant_Garamond] italic text-xl md:text-2xl text-[#ebe4d4]/70"
+                className="mt-4 font-[Cormorant_Garamond] italic text-xl md:text-2xl text-[#f0ece4]/70"
               >
                 {card.tagline}
               </motion.div>
@@ -114,15 +114,15 @@ export default function CardOverlay({ activeKey, onClose }: Props) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="border-t border-[#ebe4d4]/10 px-6 md:px-10 py-10 flex items-center justify-between max-w-[1440px] mx-auto"
+            className="border-t border-[#f0ece4]/10 px-6 md:px-10 py-10 flex items-center justify-between max-w-[1440px] mx-auto"
           >
             <button
               onClick={onClose}
-              className="text-[11px] tracking-[0.3em] uppercase font-light text-[#ebe4d4]/60 hover:text-[#ebe4d4] transition"
+              className="text-[11px] tracking-[0.3em] uppercase font-light text-[#f0ece4]/60 hover:text-[#f0ece4] transition"
             >
               ← Back to Index
             </button>
-            <div className="text-[10px] tracking-[0.3em] text-[#ebe4d4]/30 uppercase">
+            <div className="text-[10px] tracking-[0.3em] text-[#f0ece4]/30 uppercase">
               {card.number} / 06
             </div>
           </motion.div>

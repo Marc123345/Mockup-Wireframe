@@ -14,7 +14,7 @@ export default function Wireframe({
   className = "",
 }: Props) {
   const base =
-    "relative overflow-hidden bg-[#111110] border border-[#ebe4d4]/10";
+    "relative overflow-hidden bg-[#181614] border border-[#f0ece4]/10";
   const layout = fill ? "absolute inset-0" : ratio ?? "aspect-[4/5]";
 
   return (
@@ -44,19 +44,19 @@ export default function Wireframe({
       </svg>
 
       {/* Corner ticks */}
-      <span className="absolute top-2 left-2 w-3 h-3 border-t border-l border-[#ebe4d4]/20" />
-      <span className="absolute top-2 right-2 w-3 h-3 border-t border-r border-[#ebe4d4]/20" />
-      <span className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-[#ebe4d4]/20" />
-      <span className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-[#ebe4d4]/20" />
+      <span className="absolute top-2 left-2 w-3 h-3 border-t border-l border-[#f0ece4]/20" />
+      <span className="absolute top-2 right-2 w-3 h-3 border-t border-r border-[#f0ece4]/20" />
+      <span className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-[#f0ece4]/20" />
+      <span className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-[#f0ece4]/20" />
 
       {/* Center label */}
       <div className="absolute inset-0 grid place-items-center text-center px-4 pointer-events-none">
         <div>
-          <div className="text-[10px] tracking-[0.4em] text-[#ebe4d4]/40 uppercase font-light">
+          <div className="text-[10px] tracking-[0.4em] text-[#f0ece4]/40 uppercase font-light">
             {label}
           </div>
           {sublabel && (
-            <div className="mt-2 font-[Cormorant_Garamond] italic text-[#ebe4d4]/30 text-sm">
+            <div className="mt-2 font-[Cormorant_Garamond] italic text-[#f0ece4]/30 text-sm">
               {sublabel}
             </div>
           )}
